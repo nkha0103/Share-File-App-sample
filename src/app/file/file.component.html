@@ -1,0 +1,9 @@
+<td>
+  <input type="checkbox">
+</td>
+<td class="name" (click)="goTo(file.name)">{{file.name}}</td>
+<td>{{file.modified | date: 'short' }}</td>
+<td>{{file.member}}</td>
+<td>
+  <button (click)='action(file)'>...</button>
+</td>

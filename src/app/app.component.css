@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    background: gray;
+    height: 100vh;
+}
+
+app-nav-side-bar {
+    background: red;
+    width: 220px;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+}
+
+app-header {
+    background-color: purple;
+}
+
+.container {
+    background: aqua;
+    display: flex;
+    height: 100vh;
+    flex: 4;
+}
+
+.container app-container {
+    flex: 3;
+}
+
+.container app-menu-controls {
+    background: pink;
+    width: 200px;
+}
