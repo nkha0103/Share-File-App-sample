@@ -2,9 +2,19 @@ import { Component } from '@angular/core';
 
 @Component ({
     selector: 'app-menu-controls',
-    templateUrl: './menu-controls.component.html'
+    templateUrl: './menu-controls.component.html',
+    styleUrls: ['./menu-controls.component.css']
 })
 
 export class MenuControlsComponent {
+    controls: string[];
+
+    constructor() {
+        this.controls = [
+            'New shared folder',
+            'New folder',
+            'Show hidden folder'
+        ];
+    }
 
 }

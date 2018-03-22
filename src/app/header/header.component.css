@@ -1,0 +1,17 @@
+:host {
+    display: flex;
+}
+
+h1 {
+    font-weight: normal;
+    flex: 4;
+}
+
+.search {
+    flex: 3;
+}
+
+.notify,
+.user {
+    flex: 1;
+}

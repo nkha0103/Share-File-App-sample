@@ -1,0 +1,22 @@
+.upload {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 7px 37px;
+    background: blue;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px 20px;
+    font-size: 14px;
+}

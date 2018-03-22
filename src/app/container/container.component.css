@@ -1,11 +1,27 @@
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-table td {
-    text-align: center;
-}
-
-table th {
+th {
     text-align: left;
+    border-bottom: solid black 1px;
+}
+
+.check {
+    border: none;
+    width: 5px;
+}
+
+.name {
+    text-align: left;
+    padding: 0px 25px;
+}
+
+.right {
+    width: 50px;
+}
+
+.info {
+    width: 200px;
 }
