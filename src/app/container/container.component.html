@@ -6,7 +6,7 @@
         <th class="info">Member</th>
         <th class="right">Action</th>
     </thead>
-    <tr app-file *ngFor='let file of files' [file]='file' (go)='changeFolder($event)'>
+    <tr app-file *ngFor='let file of files' [file]='file' (go)='changeFolder($event)' (rmid)='remove($event)'>
     </tr>
-    <button (click)='addFolder()'>Add folder</button>
+    <button (click)='addFile()'>Add New</button>
 </table>

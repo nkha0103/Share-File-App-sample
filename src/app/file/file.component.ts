@@ -10,6 +10,7 @@ import { IFile } from '../interfaces/IFile';
 export class FileComponent {
   @Input() file: IFile;
   @Output() go: EventEmitter<String> = new EventEmitter<String>();
+  @Output() rmid: EventEmitter<Number> = new EventEmitter<Number>();
   constructor() { }
 
   action(file: any) {
@@ -18,6 +19,11 @@ export class FileComponent {
 
   goTo(name: String) {
     this.go.emit(name);
+    console.log(this.go);
   }
 
+  remove(id: Number) {
+    this.rmid.emit(id);
+    console.log(this.rmid);
+  }
 }

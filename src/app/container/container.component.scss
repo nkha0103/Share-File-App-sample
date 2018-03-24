@@ -2,27 +2,22 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
-}
+    
+    th {
+        text-align: left;
+        border-bottom: solid black 0.5px;
+        padding: 10px 20px;
+    }
 
-th {
-    text-align: left;
-    border-bottom: solid black 1px;
-}
+    .check{
+        border: none;
+    }
 
-.check {
-    border: none;
-    width: 5px;
-}
+    .info {
+        text-align: center;
+    }
 
-.name {
-    text-align: left;
-    padding: 0px 25px;
-}
-
-.right {
-    width: 50px;
-}
-
-.info {
-    width: 200px;
+    .right {
+        text-align: center;
+    }
 }
