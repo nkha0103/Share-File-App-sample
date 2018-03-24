@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component ({
     selector: 'app-menu-controls',
     templateUrl: './menu-controls.component.html',
-    styleUrls: ['./menu-controls.component.css']
+    styleUrls: ['./menu-controls.component.scss']
 })
 
 export class MenuControlsComponent {

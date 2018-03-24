@@ -1,4 +1,3 @@
-<h2>{{folder}}</h2>
 <table>
     <thead>
         <th class="check"></th>
@@ -9,4 +8,5 @@
     </thead>
     <tr app-file *ngFor='let file of files' [file]='file' (go)='changeFolder($event)'>
     </tr>
+    <button (click)='addFolder()'>Add folder</button>
 </table>

@@ -1,0 +1,24 @@
+:host {
+	display: flex;
+	height: 100vh;
+}
+app-nav-side-bar {
+	background: rgb(249, 252, 255);
+	width: 220px;
+	height: 100vh;
+}
+.right-side {
+	flex: 1;
+}
+.container {
+	background: #fff;
+	display: flex;
+	height: 100vh;
+	flex: 4;
+	app-container {
+		flex: 3;
+	}
+	app-menu-controls {
+		width: 200px;
+	}
+}

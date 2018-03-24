@@ -1,13 +1,14 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { IFile } from '../interfaces/IFile';
 
 @Component({
   // tslint:disable-next-line:component-selector
   selector: '[app-file]',
   templateUrl: './file.component.html',
-  styleUrls: ['./file.component.css']
+  styleUrls: ['./file.component.scss']
 })
 export class FileComponent {
-  @Input() file: any;
+  @Input() file: IFile;
   @Output() go: EventEmitter<String> = new EventEmitter<String>();
   constructor() { }
 
