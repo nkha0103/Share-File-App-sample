@@ -1,4 +1,5 @@
 export interface IFile {
+    _id?: string;
     id: number;
     name: string;
     modified: Date;

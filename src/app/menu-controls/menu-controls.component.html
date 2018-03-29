@@ -2,5 +2,7 @@
     <button>Upload files</button>
 </div>
 <ul>
-    <li *ngFor='let control of controls'>{{control}}</li>
+    <li>New Shared Folder</li>
+    <li (click)='addFolder()'>New Folder</li>
+    <li>Show Hidden Folder</li>
 </ul>

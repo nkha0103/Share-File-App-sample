@@ -8,5 +8,4 @@
     </thead>
     <tr app-file *ngFor='let file of files' [file]='file' (go)='changeFolder($event)' (rmid)='remove($event)'>
     </tr>
-    <button (click)='addFile()'>Add New</button>
 </table>
