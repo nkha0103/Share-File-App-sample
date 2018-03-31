@@ -11,6 +11,7 @@ import { MenuControlsComponent } from './menu-controls/menu-controls.component';
 import { FileComponent } from './file/file.component';
 import { FileService } from './providers/file.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderService } from './providers/header.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [FileService],
+  providers: [FileService, HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

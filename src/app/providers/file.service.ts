@@ -73,7 +73,8 @@ export class FileService {
             .subscribe((rmfiles: any[]) => {
                 rmfiles.splice(index, 1);
                 this.getFiles();
-            });
+            }
+        );
     }
 }
 
