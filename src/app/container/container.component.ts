@@ -28,8 +28,9 @@ export class ContainerComponent implements OnInit, OnChanges {
     this.folder = name;
   }
 
-  remove(id) {
-    const index = this.files.findIndex(file => file.id === id);
-    this.files.splice(index, 1);
+  remove(_id) {
+    const index = this.files.findIndex(file => file._id === _id);
+    // this.files.splice(index, 1);
+    this._fileService.removeFolder(_id, index);
   }
 }

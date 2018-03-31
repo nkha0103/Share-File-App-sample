@@ -25,6 +25,7 @@ export class FileService {
                     return f;
                 });
                 this._files.next(files);
+                console.log(files);
             });
     }
 
@@ -60,11 +61,19 @@ export class FileService {
         this.http.post('http://fisa.lexuanquynh.com/api/file/folder', body)
             .subscribe((sfiles: any[]) => {
                 sfiles.push(folder);
+                this.getFiles();
             });
-        this.getFiles();
         // this._files.getValue().push(folder);
         // const newFiles = this._files.getValue();
         // this._files.next(newFiles);
+    }
+
+    removeFolder(_id: string, index) {
+        this.http.delete('http://fisa.lexuanquynh.com/api/file/delete/' + _id)
+            .subscribe((rmfiles: any[]) => {
+                rmfiles.splice(index, 1);
+                this.getFiles();
+            });
     }
 }
 

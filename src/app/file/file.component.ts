@@ -10,7 +10,7 @@ import { IFile } from '../interfaces/IFile';
 export class FileComponent {
   @Input() file: IFile;
   @Output() go: EventEmitter<String> = new EventEmitter<String>();
-  @Output() rmid: EventEmitter<Number> = new EventEmitter<Number>();
+  @Output() rmid: EventEmitter<String> = new EventEmitter<String>();
   constructor() { }
 
   action(file: any) {
@@ -22,8 +22,8 @@ export class FileComponent {
     console.log(this.go);
   }
 
-  remove(id: Number) {
-    this.rmid.emit(id);
+  remove(_id: String) {
+    this.rmid.emit(_id);
     console.log(this.rmid);
   }
 }
