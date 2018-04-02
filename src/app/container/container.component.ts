@@ -35,11 +35,11 @@ export class ContainerComponent implements OnInit, OnChanges {
     this._fileService.removeFolder(_id, index);
   }
 
-  goToFolder(folder: IFile) {
-    if (folder.type === 'folder') {
-      this._fileService.getFiles({ search: '', parentId: folder._id });
-      const name = folder.name;
-      this._headerService.getHeader(name);
-    }
-  }
+  // goToFolder(folder: IFile) {
+  //   if (folder.type === 'folder') {
+  //     this._fileService.getFiles({ search: '', parentId: folder._id });
+  //     const name = folder.name;
+  //     this._headerService.getHeader(name);
+  //   }
+  // }
 }

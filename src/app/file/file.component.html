@@ -1,7 +1,7 @@
 <td class="check">
   <input type="checkbox">
 </td>
-<td class="name" (click)="goTo(file.name)">{{file.name}}</td>
+<td class="name" (click)="goToFolder(file)">{{file.name}}</td>
 <td class="info">{{file.modified | date: 'short' }}</td>
 <td class="info">{{file.member}}</td>
 <td class="right">
