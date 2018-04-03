@@ -60,7 +60,7 @@ export class FileService {
         };
         this.http.post('http://fisa.lexuanquynh.com/api/file/folder', body)
             .subscribe((sfiles: any[]) => {
-                sfiles.push(folder);
+                console.log(sfiles);
                 this.getFiles();
             });
         // this._files.getValue().push(folder);
@@ -71,7 +71,8 @@ export class FileService {
     removeFolder(_id: string, index) {
         this.http.delete('http://fisa.lexuanquynh.com/api/file/delete/' + _id)
             .subscribe((rmfiles: any[]) => {
-                rmfiles.splice(index, 1);
+                    this._files.getValue().splice(index, 1);
+                    console.log(rmfiles);
                 this.getFiles();
             }
         );
